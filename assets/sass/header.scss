@@ -1,6 +1,22 @@
 header {
 	flex: 1;
-	background-color: var(--page-background);
 	display: grid;
 	place-items: center;
+	background-color: var(--blue);
+	color: var(--white);
+	height: 50vh;
+	padding-top: 100px;
+
+	.textos {
+		max-width: 553px;
+    text-align: center;
+		p{
+			margin-top: 20px;
+		}
+	}
+	.cards {
+		margin-top: 65px;
+		display: flex;
+		align-items: center;
+	}
 }
