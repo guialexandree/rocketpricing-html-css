@@ -1,11 +1,20 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 :root {
   --yellow: #ffcc29;
   --blue: #1d539e;
   --gray: #828799;
+  --gray-light: #EEEEEE;
   --page-background: #f9fbfc;
+  --white: #fff;
+  --text-blue: #1E2338;
 }
 
+.fluid {
+  width: 100%;
+}
+
+/* FLEXBOX */
 .flex {
   flex-direction: row;
 }
@@ -64,9 +73,147 @@
 
 header {
   flex: 1;
-  background-color: var(--page-background);
   display: grid;
   place-items: center;
+  background-color: var(--blue);
+  color: var(--white);
+  height: 50vh;
+  padding-top: 100px;
+}
+header .textos {
+  max-width: 553px;
+  text-align: center;
+}
+header .textos p {
+  margin-top: 20px;
+}
+header .cards {
+  margin-top: 65px;
+  display: flex;
+  align-items: center;
+}
+
+header .card {
+  color: var(--gray);
+  margin: 0;
+  padding: 0;
+  width: 355px;
+  height: 470px;
+  max-height: 470px;
+  background: var(--white);
+  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+header .card > .card-header {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-height: 75px;
+}
+header .card > .card-header .popular {
+  font-size: 12px;
+  border-radius: 25px;
+  padding: 5px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+header .card > .card-header h4 {
+  color: var(--text-blue);
+  font-size: 18px;
+  font-weight: 600;
+}
+header .card > .card-content {
+  flex: 1;
+  padding: 10px 30px 30px;
+}
+header .card > .card-content p.price {
+  position: relative;
+  font-size: 36px;
+  color: var(--text-blue);
+  font-weight: 700;
+}
+header .card > .card-content p.price::after {
+  content: "/mês";
+  margin-left: 5px;
+  display: inline;
+  font-size: 18px;
+  color: var(--gray);
+  font-weight: 400;
+}
+header .card > .card-content p.price span {
+  font-size: 18px;
+}
+header .card > .card-content p:not(.price) {
+  font-size: 14px;
+}
+header .card > .card-content hr {
+  margin-top: 20px;
+  border: none;
+  border-top: 1px solid var(--gray-light);
+}
+header .card > .card-content ul.beneficios {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+header .card > .card-content ul.beneficios li + li {
+  margin-top: 17px;
+}
+header .card > .card-content ul.beneficios li::before {
+  content: "✔";
+  font-size: 18px;
+  color: #12c038;
+  margin-right: 15px;
+}
+header .card > .card-actions {
+  max-height: 75px;
+  padding: 0 30px 50px 30px;
+}
+header .card > .card-actions a {
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  border: solid 1px var(--blue);
+  color: var(--blue);
+  font-weight: 600;
+}
+header .card + .card {
+  margin-left: 20px;
+}
+header .card:hover {
+  max-height: 470px;
+  height: 470px;
+}
+header .card:hover .card-header {
+  background-color: var(--gray-light);
+  transition: all ease-in 0.3s;
+}
+header .card:hover .card-header h4 {
+  color: var(--blue);
+}
+header .card:hover .card-actions a {
+  background-color: var(--blue);
+  color: var(--white);
+  transition: all ease-in 0.3s;
+}
+header .card.active {
+  max-height: 490px;
+  height: 490px;
+}
+header .card.active .card-header {
+  background-color: var(--yellow);
+}
+header .card.active .card-header h4 {
+  color: var(--blue);
+}
+header .card.active .card-actions a {
+  background-color: var(--blue);
+  color: var(--white);
+  transition: all ease-in 0.3s;
 }
 
 * {
@@ -83,6 +230,7 @@ body {
   font-size: 18px;
   overflow-x: hidden;
   color: var(--gray);
+  background-color: var(--page-background);
 }
 
 button,

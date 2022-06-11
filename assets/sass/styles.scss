@@ -2,6 +2,7 @@
 @import "palette.scss";
 @import "helpers.scss";
 @import "header.scss";
+@import "card.scss";
 
 * {
   margin: 0;
@@ -17,6 +18,7 @@ body {
   font-size: 18px;
   overflow-x: hidden;
 	color: var(--gray);
+	background-color: var(--page-background);
 }
 
 button,
@@ -35,4 +37,4 @@ a { text-decoration: none ;}
 }
 
 a { color: var(--blue);}
-h1 { font-size: 48px };
+h1 { font-size: 48px; };

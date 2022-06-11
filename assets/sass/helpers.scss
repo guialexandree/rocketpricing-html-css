@@ -1,3 +1,6 @@
+.fluid { width: 100%;}
+
+/* FLEXBOX */
 .flex { flex-direction: row; }
 .flex-y { flex-direction: column; }
 .wrap { flex-wrap: wrap; }
@@ -18,7 +21,5 @@
   &.ai-fs { align-items: flex-start; }
   &.ai-fe { align-items: flex-end; }
   &.ai-stretch { align-items: stretch; }
-
-  
 }
 

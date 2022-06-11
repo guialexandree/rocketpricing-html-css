@@ -1,7 +1,7 @@
 # Solução do desafio 
-https://guialexandree.github.io/rocketlogin-html-css/ 🎈
+https://guialexandree.github.io/rocketpricing-html-css/ 🎈
 
-# Desafio: RocketLogin
-![image](https://user-images.githubusercontent.com/30730216/163728572-fcdf5a20-cd7a-4ca9-950e-2fa143d27730.png)
+# Desafio: Rocket Pricing Table
+![image](https://user-images.githubusercontent.com/30730216/163728786-a09901aa-d6e3-45d6-bd0f-ded31e0245f4.png)
 
-Original: [Ver desafio original](https://efficient-sloth-d85.notion.site/Desafio-Login-Form-CSS-a10caea5a183494e97eb9ce4f33536b3)<br>
+Original: [Ver desafio original](https://efficient-sloth-d85.notion.site/Desafio-Pricing-Table-e0b6f59253e54d229fdde09228226b32)<br>
