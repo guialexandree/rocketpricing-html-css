@@ -1,0 +1,20 @@
+{
+  "name": "rocket-nfts-html-css",
+  "version": "1.0.0",
+  "description": "![image](https://user-images.githubusercontent.com/30730216/160460014-ea609ba4-0be2-4a6f-90e6-742568eda2b9.png)",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --watch assets/sass/styles.scss:assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guialexandree/rocket-nfts-html-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guialexandree/rocket-nfts-html-css/issues"
+  },
+  "homepage": "https://github.com/guialexandree/rocket-nfts-html-css#readme"
+}
